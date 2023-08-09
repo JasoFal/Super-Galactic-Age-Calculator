@@ -46,16 +46,16 @@ describe('GalacticAgeCalc', () => {
     expect(galacticAgeCalc.futureJupiterTime).toEqual(null);
   });
 
-  test('round mercuryTime to nearest integer', () => {
+  test('round mercuryTime down', () => {
     expect(galacticAgeCalc.mercuryTime).toEqual(207);
   });
 
-  test('round venusTime to nearest integer', () => {
+  test('round venusTime down', () => {
     expect(galacticAgeCalc.venusTime).toEqual(81);
   }); 
 
-  test('round marsTime to nearest integer', () => {
-    expect(galacticAgeCalc.marsTime).toEqual(27);
+  test('round marsTime down', () => {
+    expect(galacticAgeCalc.marsTime).toEqual(26);
   });
 });
 
