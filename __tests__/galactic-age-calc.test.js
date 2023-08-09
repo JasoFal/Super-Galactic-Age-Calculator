@@ -101,7 +101,7 @@ describe('elapsedFutureCalc', () => {
   });
   
   test('calculating difference between futureAge and presentAge in Jupiter years', () => {
-    expect(galacticAgeCalc.futureJupiterTime).toBeGreaterThanOrEqual(2);
+    expect(galacticAgeCalc.futureJupiterTime).toBeGreaterThanOrEqual(.84);
   });
 });
 

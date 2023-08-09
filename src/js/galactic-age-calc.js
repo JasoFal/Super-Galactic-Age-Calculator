@@ -32,5 +32,6 @@ export default class GalacticAgeCalc {
     this.futureMercuryTime = (this.futureAge/.241) - this.mercuryTime;
     this.futureVenusTime = (this.futureAge/.615) - this.venusTime;
     this.futureMarsTime = (this.futureAge/1.88) - this.marsTime;
+    this.futureJupiterTime = (this.futureAge/11.86);
   }
 }
