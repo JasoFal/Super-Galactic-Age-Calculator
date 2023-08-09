@@ -16,6 +16,10 @@ describe('GalacticAgeCalc', () => {
     console.table(galacticAgeCalc);
     expect(galacticAgeCalc.mercuryTime).toBeGreaterThanOrEqual(207);
   });
+
+  test('correctly create key-item pair for calculating venusTime', () => {
+    expect(galacticAgeCalc.venusTime).toBeGreaterThanOrEqual(81);
+  });
 });
 
 // CK3 Total War Mod
