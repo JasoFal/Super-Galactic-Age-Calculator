@@ -89,5 +89,9 @@ describe('elapsedFutureCalc', () => {
   test('calculating difference between futureAge and presentAge in Mercury years', () => {
     expect(galacticAgeCalc.futureMercuryTime).toBeGreaterThanOrEqual(41);
   });
+
+  test('calculating difference between futureAge and presentAge in Venus years', () => {
+    expect(galacticAgeCalc.futureVenusTime).toBeGreaterThanOrEqual(33);
+  });
 });
 
