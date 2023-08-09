@@ -90,9 +90,13 @@ describe('ghostOfAgesPast', () => {
   test('calculate difference between pastAge and presentAge in Jupiter years', () => {
     expect(galacticAgeCalc.elapsedPastJupiterTime).toBeGreaterThanOrEqual(3);
   });
-  
+
   test('round elapsedPastMercuryTime down', () => {
     expect(galacticAgeCalc.elapsedPastMercuryTime).toEqual(165);
+  });
+
+  test('round elapsedPastVenusTime down', () => {
+    expect(galacticAgeCalc.elapsedPastVenusTime).toEqual(64);
   });
 });
 
