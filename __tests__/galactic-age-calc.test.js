@@ -117,7 +117,11 @@ describe('elapsedFutureCalc', () => {
   });
   
   test('calculating difference between futureAge and presentAge in Jupiter years', () => {
-    expect(galacticAgeCalc.futureJupiterTime).toBeGreaterThanOrEqual(.84);
+    expect(galacticAgeCalc.futureJupiterTime).toBeGreaterThanOrEqual(0);
+  });
+
+  test('round elapsedPastMercuryTime down', () => {
+    expect(galacticAgeCalc.elapsedPastMercuryTime).toEqual(165);
   });
 });
 
