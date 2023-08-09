@@ -53,6 +53,10 @@ describe('GalacticAgeCalc', () => {
   test('round venusTime to nearest integer', () => {
     expect(galacticAgeCalc.venusTime).toEqual(81);
   }); 
+
+  test('round marsTime to nearest integer', () => {
+    expect(galacticAgeCalc.marsTime).toEqual(27);
+  });
 });
 
 describe('ghostOfAgesPast', () => {
