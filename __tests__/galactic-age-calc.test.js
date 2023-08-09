@@ -29,12 +29,24 @@ describe('GalacticAgeCalc', () => {
     expect(galacticAgeCalc.jupiterTime).toBeGreaterThanOrEqual(4);
   });
 
-  test('correctly create key-item pair for elapsedEarthTime, MercuryTime, VenusTime, MarsTime, and JupiterTime', () => {
-    expect(galacticAgeCalc.elapsedEarthTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedMercuryTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedVenusTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedMarsTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedJupiterTime).toEqual(null);
+  test('correctly create key-item pair for elapsedPastEarthTime, PastMercuryTime, PastVenusTime, PastMarsTime, and PastJupiterTime', () => {
+    expect(galacticAgeCalc.elapsedPastEarthTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedPastMercuryTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedPastVenusTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedPastMarsTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedPastJupiterTime).toEqual(null);
+  });
+});
+
+describe('ghostOfAgesPast', () => {
+  let galacticAgeCalc;
+  beforeEach(() => {
+    galacticAgeCalc = new GalacticAgeCalc(10, 50, 60);
+    galacticAgeCalc.ghostOfAgesPast();
+  });
+
+  test('correctly create key-item pair which calculates difference between pastAge and presentAge in Earth years', () => {
+    expect(galacticAgeCalc.elapsedPastEarthTime).toEqual(40);
   });
 });
 
