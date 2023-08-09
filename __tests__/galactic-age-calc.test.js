@@ -135,5 +135,9 @@ describe('elapsedFutureCalc', () => {
   test('calculating difference between futureAge and presentAge in Jupiter years', () => {
     expect(galacticAgeCalc.futureJupiterTime).toBeGreaterThanOrEqual(0);
   });
+
+  test('rounding futureMercuryTime down', () => {
+    expect(galacticAgeCalc.futureMercuryTime).toEqual(41);
+  });
 });
 
