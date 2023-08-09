@@ -2,6 +2,11 @@ import { template } from "@babel/core";
 import GalacticAgeCalc from "../src/js/galactic-age-calc"
 
 describe('GalacticAgeCalc', () => {
+  test('round pastAge down', () => {
+    let galacticAgeCalc = new GalacticAgeCalc(10.4512, 50.5123, 60.421);
+    expect(galacticAgeCalc.pastAge).toEqual(10);
+  });
+
   let galacticAgeCalc;
   beforeEach(() => {
     galacticAgeCalc = new GalacticAgeCalc(10, 50, 60);
