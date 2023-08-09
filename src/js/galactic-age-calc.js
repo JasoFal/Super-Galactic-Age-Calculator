@@ -24,7 +24,7 @@ export default class GalacticAgeCalc {
     this.elapsedPastMercuryTime = Math.floor(this.mercuryTime - (this.pastAge/.241));
     this.elapsedPastVenusTime = Math.floor(this.venusTime - (this.pastAge/.615));
     this.elapsedPastMarsTime = Math.floor(this.marsTime - (this.pastAge/1.88));
-    this.elapsedPastJupiterTime = this.jupiterTime - (this.pastAge/11.86);
+    this.elapsedPastJupiterTime = Math.floor(this.jupiterTime - (this.pastAge/11.86));
   }
 
   elapsedFutureCalc() {
