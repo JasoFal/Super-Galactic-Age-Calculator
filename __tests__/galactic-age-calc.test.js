@@ -85,5 +85,9 @@ describe('elapsedFutureCalc', () => {
   test('calculate difference between futureAge and presentAge in Earth years', () => {
     expect(galacticAgeCalc.futureEarthTime).toBeGreaterThanOrEqual(10);
   });
+
+  test('calculating difference between futureAge and presentAge in Mercury years', () => {
+    expect(galacticAgeCalc.futureMercuryTime).toBeGreaterThanOrEqual(41);
+  });
 });
 
