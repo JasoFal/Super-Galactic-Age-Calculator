@@ -139,5 +139,9 @@ describe('elapsedFutureCalc', () => {
   test('rounding futureMercuryTime down', () => {
     expect(galacticAgeCalc.futureMercuryTime).toEqual(41);
   });
+  
+  test('rounding futureVenusTime down', () => {
+    expect(galacticAgeCalc.futureVenusTime).toEqual(16);
+  });
 });
 
