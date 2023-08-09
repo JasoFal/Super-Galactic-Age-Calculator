@@ -3,5 +3,6 @@ export default class GalacticAgeCalc {
     this.pastAge = past;
     this.presentAge = present;
     this.futureAge = future;
+    this.mercuryTime = this.presentAge/.241;
   }
 }

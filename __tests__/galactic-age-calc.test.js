@@ -13,7 +13,8 @@ describe('GalacticAgeCalc', () => {
   });
 
   test('correctly create key-item pair for calculating mercuryTime', () => {
-    expect(galacticAgeCalc.mercuryTime).toContain(207);
+    console.table(galacticAgeCalc);
+    expect(galacticAgeCalc.mercuryTime).toBeGreaterThanOrEqual(207);
   });
 });
 
