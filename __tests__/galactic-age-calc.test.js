@@ -28,6 +28,13 @@ describe('GalacticAgeCalc', () => {
   test('correctly create key-item pair for calculating jupiterTime', () => {
     expect(galacticAgeCalc.jupiterTime).toBeGreaterThanOrEqual(4);
   });
+
+  test('correctly create key-item pair for elapsedEarthTime, MercuryTime, VenusTime, MarsTime, and JupiterTime', () => {
+    expect(galacticAgeCalc.elapsedEarthTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedMercuryTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedVenusTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedMarsTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedJupiterTime).toEqual(null);
+  });
 });
 
-// CK3 Total War Mod
