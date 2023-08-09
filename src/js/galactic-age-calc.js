@@ -2,7 +2,7 @@ export default class GalacticAgeCalc {
   constructor(past, present, future) {
     this.pastAge = Math.floor(past);
     this.presentAge = Math.floor(present);
-    this.futureAge = future;
+    this.futureAge = Math.floor(future);
     this.mercuryTime = Math.floor(this.presentAge/.241);
     this.venusTime = Math.floor(this.presentAge/.615);
     this.marsTime = Math.floor(this.presentAge/1.88);
