@@ -7,8 +7,14 @@ describe('GalacticAgeCalc', () => {
   });
 
   test('correctly create object with key-item pairs for past, present, and future ages', () => {
-    expect(galacticAgeCalc.past).toEqual(10);
-    expect(galacticAgeCalc.present).toEqual(50);
-    expect(galacticAgeCalc.future).toEqual(60);
+    expect(galacticAgeCalc.pastAge).toEqual(10);
+    expect(galacticAgeCalc.presentAge).toEqual(50);
+    expect(galacticAgeCalc.futureAge).toEqual(60);
+  });
+
+  test('correctly create key-item pair for calculating mercuryTime', () => {
+    expect(galacticAgeCalc.mercuryTime).toContain(207);
   });
 });
+
+// CK3 Total War Mod
