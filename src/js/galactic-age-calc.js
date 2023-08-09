@@ -29,5 +29,6 @@ export default class GalacticAgeCalc {
 
   elapsedFutureCalc() {
     this.futureEarthTime = this.futureAge - this.presentAge;
+    this.futureMercuryTime = (this.futureAge/.241) - this.presentAge;
   }
 }
