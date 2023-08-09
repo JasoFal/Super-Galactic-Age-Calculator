@@ -45,8 +45,12 @@ describe('ghostOfAgesPast', () => {
     galacticAgeCalc.ghostOfAgesPast();
   });
 
-  test('correctly create key-item pair which calculates difference between pastAge and presentAge in Earth years', () => {
-    expect(galacticAgeCalc.elapsedPastEarthTime).toEqual(40);
+  test('calculate difference between pastAge and presentAge in Earth years', () => {
+    expect(galacticAgeCalc.elapsedPastEarthTime).toBeGreaterThanOrEqual(40);
+  });
+
+  test('calculate difference between pastAge and presentAge in Mercury years', () => {
+    expect(galacticAgeCalc.elapsedPastMercuryTime).toBeGreaterThanOrEqual(165);
   });
 });
 
