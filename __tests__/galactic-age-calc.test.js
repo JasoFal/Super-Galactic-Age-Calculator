@@ -13,6 +13,11 @@ describe('GalacticAgeCalc', () => {
     expect(galacticAgeCalc.presentAge).toEqual(50);
   });
 
+  test('round futureAge down', () => {
+    let galacticAgeCalc = new GalacticAgeCalc(10.4512, 50.5123, 60.421);
+    expect(galacticAgeCalc.futureAge).toEqual(60);
+  });
+
   let galacticAgeCalc;
   beforeEach(() => {
     galacticAgeCalc = new GalacticAgeCalc(10, 50, 60);
