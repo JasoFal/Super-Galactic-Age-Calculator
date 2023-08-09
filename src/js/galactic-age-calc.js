@@ -1,6 +1,6 @@
 export default class GalacticAgeCalc {
   constructor(past, present, future) {
-    this.pastAge = past;
+    this.pastAge = Math.floor(past);
     this.presentAge = present;
     this.futureAge = future;
     this.mercuryTime = Math.floor(this.presentAge/.241);
