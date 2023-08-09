@@ -29,12 +29,20 @@ describe('GalacticAgeCalc', () => {
     expect(galacticAgeCalc.jupiterTime).toBeGreaterThanOrEqual(4);
   });
 
-  test('correctly create key-item pair for elapsedPastEarthTime, PastMercuryTime, PastVenusTime, PastMarsTime, and PastJupiterTime', () => {
+  test('correctly create key-item pairs for elapsedPastEarthTime, PastMercuryTime, PastVenusTime, PastMarsTime, and PastJupiterTime', () => {
     expect(galacticAgeCalc.elapsedPastEarthTime).toEqual(null);
     expect(galacticAgeCalc.elapsedPastMercuryTime).toEqual(null);
     expect(galacticAgeCalc.elapsedPastVenusTime).toEqual(null);
     expect(galacticAgeCalc.elapsedPastMarsTime).toEqual(null);
     expect(galacticAgeCalc.elapsedPastJupiterTime).toEqual(null);
+  });
+
+  test('correctly create key-item pairs for elapsedFutureEarthTime, FutureMercuryTime, FutureVenusTime, FutureMarsTime, and FutureJupiterTime', () => {
+    expect(galacticAgeCalc.elapsedFutureEarthTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedFutureMercuryTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedFutureVenusTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedFutureMarsTime).toEqual(null);
+    expect(galacticAgeCalc.elapsedFutureJupiterTime).toEqual(null);
   });
 });
 
@@ -63,6 +71,7 @@ describe('ghostOfAgesPast', () => {
 
   test('calculate difference between pastAge and presentAge in Jupiter years', () => {
     expect(galacticAgeCalc.elapsedPastJupiterTime).toBeGreaterThanOrEqual(3);
+    console.table(galacticAgeCalc);
   });
 });
 
