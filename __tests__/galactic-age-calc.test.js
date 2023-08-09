@@ -45,6 +45,10 @@ describe('GalacticAgeCalc', () => {
     expect(galacticAgeCalc.futureMarsTime).toEqual(null);
     expect(galacticAgeCalc.futureJupiterTime).toEqual(null);
   });
+
+  test('round mercuryTime to nearest integer', () => {
+    expect(galacticAgeCalc.mercuryTime).toEqual(207);
+  });
 });
 
 describe('ghostOfAgesPast', () => {
