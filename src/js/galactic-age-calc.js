@@ -12,11 +12,11 @@ export default class GalacticAgeCalc {
     this.elapsedPastVenusTime = null;
     this.elapsedPastMarsTime = null;
     this.elapsedPastJupiterTime = null;
-    this.FutureEarthTime = null;
-    this.FutureMercuryTime = null;
-    this.FutureVenusTime = null;
-    this.FutureMarsTime = null;
-    this.FutureJupiterTime = null;
+    this.futureEarthTime = null;
+    this.futureMercuryTime = null;
+    this.futureVenusTime = null;
+    this.futureMarsTime = null;
+    this.futureJupiterTime = null;
   }
 
   ghostOfAgesPast() {
@@ -25,5 +25,9 @@ export default class GalacticAgeCalc {
     this.elapsedPastVenusTime = this.venusTime - (this.pastAge/.615);
     this.elapsedPastMarsTime = this.marsTime - (this.pastAge/1.88);
     this.elapsedPastJupiterTime = this.jupiterTime - (this.pastAge/11.86);
+  }
+
+  elapsedFutureCalc() {
+    this.futureEarthTime = this.futureAge - this.presentAge;
   }
 }
