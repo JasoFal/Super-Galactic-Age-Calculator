@@ -3,7 +3,7 @@ export default class GalacticAgeCalc {
     this.pastAge = past;
     this.presentAge = present;
     this.futureAge = future;
-    this.mercuryTime = this.presentAge/.241;
+    this.mercuryTime = Math.round(this.presentAge/.241);
     this.venusTime = this.presentAge/.615;
     this.marsTime = this.presentAge/1.88;
     this.jupiterTime = this.presentAge/11.86;
