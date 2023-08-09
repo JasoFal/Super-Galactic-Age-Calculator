@@ -24,6 +24,10 @@ describe('GalacticAgeCalc', () => {
   test('correctly create key-item pair for calculating marsTime', () => {
     expect(galacticAgeCalc.marsTime).toBeGreaterThanOrEqual(26);
   });
+
+  test('correctly create key-item pair for calculating jupiterTime', () => {
+    expect(galacticAgeCalc.jupiterTime).toBeGreaterThanOrEqual(4);
+  });
 });
 
 // CK3 Total War Mod
