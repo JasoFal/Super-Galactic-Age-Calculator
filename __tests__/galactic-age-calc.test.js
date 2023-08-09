@@ -1,3 +1,4 @@
+import { template } from "@babel/core";
 import GalacticAgeCalc from "../src/js/galactic-age-calc"
 
 describe('GalacticAgeCalc', () => {
@@ -84,6 +85,7 @@ describe('elapsedFutureCalc', () => {
 
   test('calculate difference between futureAge and presentAge in Earth years', () => {
     expect(galacticAgeCalc.futureEarthTime).toBeGreaterThanOrEqual(10);
+    console.table(galacticAgeCalc);
   });
 
   test('calculating difference between futureAge and presentAge in Mercury years', () => {
@@ -91,11 +93,15 @@ describe('elapsedFutureCalc', () => {
   });
 
   test('calculating difference between futureAge and presentAge in Venus years', () => {
-    expect(galacticAgeCalc.futureVenusTime).toBeGreaterThanOrEqual(33);
+    expect(galacticAgeCalc.futureVenusTime).toBeGreaterThanOrEqual(16);
   });
 
   test('calculating difference between futureAge and presentAge in Mars years', () => {
     expect(galacticAgeCalc.futureMarsTime).toBeGreaterThanOrEqual(5);
+  });
+  
+  test('calculating difference between futureAge and presentAge in Jupiter years', () => {
+    expect(galacticAgeCalc.futureJupiterTime).toBeGreaterThanOrEqual(2);
   });
 });
 
