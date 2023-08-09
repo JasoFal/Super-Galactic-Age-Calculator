@@ -6,7 +6,7 @@ export default class GalacticAgeCalc {
     this.mercuryTime = Math.floor(this.presentAge/.241);
     this.venusTime = Math.floor(this.presentAge/.615);
     this.marsTime = Math.floor(this.presentAge/1.88);
-    this.jupiterTime = this.presentAge/11.86;
+    this.jupiterTime = Math.floor(this.presentAge/11.86);
     this.elapsedPastEarthTime = null;
     this.elapsedPastMercuryTime = null;
     this.elapsedPastVenusTime = null;
