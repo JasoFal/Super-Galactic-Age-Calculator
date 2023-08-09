@@ -1,6 +1,6 @@
-# Template Repo
+# Super Galactic Age Calculator
 
-#### A template repo to make my life easier
+#### A Fidgetech independent project
 
 #### By Jason Falk
 
@@ -13,18 +13,22 @@
 * _Git/Git Bash_
 
 ## Description
+Note has no UI yet. For demonstrating knowledge of TDD and ES6 classes as of right now.
+Calculate your age using different planets time.
+
 
 ## Setup/Installation Requirements
 
 * _Install all packages with <mark>$ npm install<mark>_
 * _Build project using webpack with <mark>$ npm run build<mark>_
-* _Start dev server with <mark>$ npm run start<mark>_
-* _Linting JS files in the <mark>src<mark> folder with <mark>$ npm run lint<mark>_
-* _Run tests with Jest using <mark>$ npm run test<mark>_
+* _Use <mark>npm run test<mark>_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs_
 
 ## License
+
+_MIT_
+
+Copyright (c) _8/9/23_ _Jason Falk_
