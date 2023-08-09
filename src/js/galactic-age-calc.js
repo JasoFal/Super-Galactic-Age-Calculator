@@ -5,5 +5,6 @@ export default class GalacticAgeCalc {
     this.futureAge = future;
     this.mercuryTime = this.presentAge/.241;
     this.venusTime = this.presentAge/.615;
+    this.marsTime = this.presentAge/1.88;
   }
 }
