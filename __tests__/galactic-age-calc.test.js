@@ -56,5 +56,9 @@ describe('ghostOfAgesPast', () => {
   test('calculate difference between pastAge and presentAge in Venus years', () => {
     expect(galacticAgeCalc.elapsedPastVenusTime).toBeGreaterThanOrEqual(64);
   });
+
+  test('calculate difference between pastAge and presentAge in Mars years', () => {
+    expect(galacticAgeCalc.elapsedPastMarsTime).toBeGreaterThanOrEqual(20);
+  });
 });
 
