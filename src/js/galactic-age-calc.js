@@ -12,6 +12,11 @@ export default class GalacticAgeCalc {
     this.elapsedPastVenusTime = null;
     this.elapsedPastMarsTime = null;
     this.elapsedPastJupiterTime = null;
+    this.FutureEarthTime = null;
+    this.FutureMercuryTime = null;
+    this.FutureVenusTime = null;
+    this.FutureMarsTime = null;
+    this.FutureJupiterTime = null;
   }
 
   ghostOfAgesPast() {

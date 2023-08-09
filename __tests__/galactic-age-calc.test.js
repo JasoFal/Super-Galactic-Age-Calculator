@@ -38,11 +38,11 @@ describe('GalacticAgeCalc', () => {
   });
 
   test('correctly create key-item pairs for elapsedFutureEarthTime, FutureMercuryTime, FutureVenusTime, FutureMarsTime, and FutureJupiterTime', () => {
-    expect(galacticAgeCalc.elapsedFutureEarthTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedFutureMercuryTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedFutureVenusTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedFutureMarsTime).toEqual(null);
-    expect(galacticAgeCalc.elapsedFutureJupiterTime).toEqual(null);
+    expect(galacticAgeCalc.FutureEarthTime).toEqual(null);
+    expect(galacticAgeCalc.FutureMercuryTime).toEqual(null);
+    expect(galacticAgeCalc.FutureVenusTime).toEqual(null);
+    expect(galacticAgeCalc.FutureMarsTime).toEqual(null);
+    expect(galacticAgeCalc.FutureJupiterTime).toEqual(null);
   });
 });
 
