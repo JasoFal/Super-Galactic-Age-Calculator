@@ -2,9 +2,15 @@ import { template } from "@babel/core";
 import GalacticAgeCalc from "../src/js/galactic-age-calc"
 
 describe('GalacticAgeCalc', () => {
+  // Later tests but didn't want beforeEach to affect them
   test('round pastAge down', () => {
     let galacticAgeCalc = new GalacticAgeCalc(10.4512, 50.5123, 60.421);
     expect(galacticAgeCalc.pastAge).toEqual(10);
+  });
+
+  test('round presentAge down', () => {
+    let galacticAgeCalc = new GalacticAgeCalc(10.4512, 50.5123, 60.421);
+    expect(galacticAgeCalc.presentAge).toEqual(50);
   });
 
   let galacticAgeCalc;
