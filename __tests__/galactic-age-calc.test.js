@@ -55,6 +55,7 @@ describe('ghostOfAgesPast', () => {
 
   test('calculate difference between pastAge and presentAge in Earth years', () => {
     expect(galacticAgeCalc.elapsedPastEarthTime).toBeGreaterThanOrEqual(40);
+    console.table(galacticAgeCalc);
   });
 
   test('calculate difference between pastAge and presentAge in Mercury years', () => {
@@ -71,7 +72,6 @@ describe('ghostOfAgesPast', () => {
 
   test('calculate difference between pastAge and presentAge in Jupiter years', () => {
     expect(galacticAgeCalc.elapsedPastJupiterTime).toBeGreaterThanOrEqual(3);
-    console.table(galacticAgeCalc);
   });
 });
 
@@ -92,6 +92,10 @@ describe('elapsedFutureCalc', () => {
 
   test('calculating difference between futureAge and presentAge in Venus years', () => {
     expect(galacticAgeCalc.futureVenusTime).toBeGreaterThanOrEqual(33);
+  });
+
+  test('calculating difference between futureAge and presentAge in Mars years', () => {
+    expect(galacticAgeCalc.futureMarsTime).toBeGreaterThanOrEqual(5);
   });
 });
 
