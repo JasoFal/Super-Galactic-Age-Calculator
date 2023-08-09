@@ -19,6 +19,10 @@ describe('GalacticAgeCalc', () => {
 
   test('correctly create key-item pair for calculating venusTime', () => {
     expect(galacticAgeCalc.venusTime).toBeGreaterThanOrEqual(81);
+  }); 
+
+  test('correctly create key-item pair for calculating marsTime', () => {
+    expect(galacticAgeCalc.marsTime).toBeGreaterThanOrEqual(26);
   });
 });
 
