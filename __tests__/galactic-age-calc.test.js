@@ -102,6 +102,10 @@ describe('ghostOfAgesPast', () => {
   test('round elapsedPastMarsTime down', () => {
     expect(galacticAgeCalc.elapsedPastMarsTime).toEqual(20);
   });
+
+  test('round elapsedPastJupiterTime down', () => {
+    expect(galacticAgeCalc.elapsedPastJupiterTime).toEqual(3);
+  });
 });
 
 describe('elapsedFutureCalc', () => {
