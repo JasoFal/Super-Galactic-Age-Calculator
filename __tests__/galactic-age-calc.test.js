@@ -57,6 +57,10 @@ describe('GalacticAgeCalc', () => {
   test('round marsTime down', () => {
     expect(galacticAgeCalc.marsTime).toEqual(26);
   });
+
+  test('round jupiterTime down', () => {
+    expect(galacticAgeCalc.jupiterTime).toEqual(4);
+  });
 });
 
 describe('ghostOfAgesPast', () => {
