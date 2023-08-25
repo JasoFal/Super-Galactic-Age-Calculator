@@ -18,8 +18,10 @@ Calculate your age using different planets time.
 
 
 ## Setup/Installation Requirements
-
-* _Install all packages with <mark>$ npm install<mark>_
+* _Make your way to the directory on Github <link>https://github.com/JasoFal/Super-Galactic-Age-Calculator<link>_
+* _Then click the green <>code button to either pull the directory down using git bash or downloading directly_
+---------------
+* _Once downloaded install all packages with <mark>$ npm install<mark>_
 * _Build project using webpack with <mark>$ npm run build<mark>_
 * _Use <mark>npm run test<mark>_
 
